@@ -1,32 +1,35 @@
 # 🧮 Site Configuration - FeathersUp Podcast
+# ---------------------------------------------------------
+# 注意：YAML 对空格极其敏感，请确保直接复制，不要手动修改缩进。
+
+# 1. 网站核心设置
 name: "FeathersUp Podcast"
 title: "FeathersUp Podcast"
-description: "关于创业、艺术与学术的对话。由 lailudan 策划。"
+description: "关于创业、艺术与学术的对话。由 lailudan 策划。目前正在神户大学 GSCIS-Economics 攻读博士，导师高桥新吾。"
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/logo.png'
 
-# 🚀 这里的 baseurl 必须改，否则样式会乱
+# 🚀 路径修正 (修复网站变丑的关键)
 url: "https://lailudan.github.io"
 baseurl: "/FeathersUp_Podcast"
 
+# 2. 功能开关
 google_analytics: ''
 disqus: ''
 mailchimp-list: ''
 include: ["_pages"]
 permalink: /:title/
 
-# 🎨 Authors - 这里改成了你的信息
+# 3. ✍️ 作者信息 (已更新为你的背景)
 authors:
   lailudan:
     name: lailudan
     display_name: lailudan
-    avatar: 'assets/images/avatar.png' # 建议稍后在 assets/images/ 换成你的头像
-    email: # 选填
+    avatar: 'assets/images/avatar.png'
     web: https://lailudan.github.io/FeathersUp_Podcast/
-    twitter: 
-    description: "FeathersUp Podcast 主理人。建筑师、播客制作人，正在探索分形几何与经济学的交界。"
+    description: "FeathersUp Podcast 制作人。建筑学背景，现于神户大学攻读博士，关注 HEOR 与经济学领域。热爱分形几何、钢笔与跨界对话。"
 
-# 🛠️ Plugins
+# 4. 🛠️ 插件列表 (保持现状以支持功能)
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
@@ -34,7 +37,7 @@ plugins:
   - jekyll-seo-tag
   - jekyll-archives
     
-# Archives
+# 5. 分类归档设置
 jekyll-archives:
   enabled:
     - categories
@@ -42,13 +45,12 @@ jekyll-archives:
   permalinks:
     category: '/category/:name/'
     
-# Pagination 
+# 6. 分页设置 (每页显示 6 篇文章)
 paginate: 6
 paginate_path: /page:num/
     
-# Other
+# 7. 技术渲染配置
 markdown: kramdown
-
 kramdown:
   input: GFM
   syntax_highlighter: rouge
@@ -56,10 +58,9 @@ kramdown:
     block:
       line_numbers: true
 
-# Adsense 
+# 8. 其他设置
 adsense: "disabled"
-
-# Lazy Images
 lazyimages: "enabled"
 
+# 9. 排除文件 (不参与网页生成的开发文件)
 exclude: [changelog.md, LICENSE.txt, README.md, Gemfile, Gemfile.lock]
