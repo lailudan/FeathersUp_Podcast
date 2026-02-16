@@ -5,8 +5,8 @@
 # 1. 网站核心设置
 name: "FeathersUp Podcast"
 title: "FeathersUp Podcast"
-description: "关于创业、艺术与学术的对话。由 lailudan 策划。目前正在神户大学 GSCIS-Economics 攻读博士，导师高桥新吾。"
-logo: 'assets/images/logo.png'
+description: "关于创业、艺术与学术的对话。由 lailudan 策划。即将赴日攻读经济学博士。"
+logo: 
 favicon: 'assets/images/logo.png'
 
 # 🚀 路径修正 (修复网站变丑的关键)
