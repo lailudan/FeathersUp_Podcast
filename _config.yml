@@ -6,7 +6,7 @@
 name: "FeathersUp Podcast"
 title: "FeathersUp Podcast"
 description: "关于创业、艺术与学术的对话。由 lailudan 策划。即将赴日攻读经济学博士。"
-logo: 
+logo: 'assets/images/Logo_5@2x-100.jpg'
 favicon: 'assets/images/logo.png'
 
 # 🚀 路径修正 (修复网站变丑的关键)
